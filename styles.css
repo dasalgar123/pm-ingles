@@ -2,89 +2,109 @@ body {
     font-family: Arial, sans-serif;
     padding: 20px;
     color: white;
+    margin: 0; /* Elimina el margen por defecto */
 }
+
 header {
     text-align: center;
 }
-fieldset, 
-header, 
-footer, 
-article, 
-body { 
-    border: 2px solid yellowgreen; 
-    border-radius: 30px; 
-    padding: 20px; 
-    margin: 10px;  
-    background-color: green; 
+
+fieldset,
+header,
+footer,
+article,
+body {
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    background-color: green;
 }
-legend { 
-    font-weight: bold; 
+
+legend {
+    font-weight: bold;
     font-size: 20px;
 }
-.container { 
-    display: flex; 
-    justify-content: center; 
+
+.container {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
-.item { 
-    margin: 10px; 
+
+.item {
+    margin: 10px;
     text-align: center;
 }
-h3 { 
+
+h3 {
     margin: 10px 0;
 }
-footer { 
-    text-align: center; 
+
+footer {
+    text-align: center;
     margin-top: 20px;
 }
-footer p { 
+
+footer p {
     margin: 5px 0;
 }
-img { 
-    max-width: 100%; 
-    height: auto; 
+
+img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 }
-a { 
-    text-decoration: none; 
+
+a {
+    text-decoration: none;
     color: white;
 }
-a:hover { 
+
+a:hover {
     color: yellow;
 }
-fieldset { 
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    border-radius: 30px; 
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
 }
-div { 
-    text-align: center; 
+
+div {
+    text-align: center;
     margin: 0 10px;
 }
-img { 
-    max-width: 100px; 
-    height: auto; 
+
+img {
+    max-width: 100px;
+    height: auto;
     border-radius: 10px;
 }
-.documentacion { 
-    display: flex; 
-    justify-content: space-around; 
+
+.documentacion {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
-.documentacion div { 
-    text-align: center; 
+
+.documentacion div {
+    text-align: center;
     margin: 0 10px;
 }
-.documentacion img { 
-    max-width: 100px; 
-    height: auto; 
+
+.documentacion img {
+    max-width: 100px;
+    height: auto;
     border-radius: 10px;
 }
+
 .pdf-controls {
     text-align: center;
     margin: 10px 0;
 }
+
 .pdf-controls button {
     padding: 10px;
     border: none;
@@ -94,45 +114,57 @@ img {
     cursor: pointer;
     margin: 0 5px;
 }
+
 .pdf-controls button:hover {
     background-color: white;
     color: green;
 }
 
+/* Estilos para el diseño de las columnas */
+.documentacion_envida, .documentacion_envida {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas si es necesario */
+}
 
-     /* Estilos para el diseño de las columnas */
-     .documentacion_envida, .documentacion_envida  {
-        display: flex; /* Utiliza flexbox para alinear los elementos */
-        justify-content: space-around; /* Espacia los elementos de manera uniforme */
-        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas si es necesario */
+.documentacion_envida div {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: space-around; /* Espacia los elementos de manera uniforme */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas si es necesario */
+}
+
+/* Estilos opcionales para las imágenes */
+.documentacion_envida img {
+    max-width: 100%; /* Asegura que las imágenes no se salgan de su contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    fieldset, header, footer, article, body {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+        margin: 5px; /* Reduce el margen en pantallas pequeñas */
     }
 
-    .documentacion_envida div {
-        display: flex; /* Utiliza flexbox para alinear los elementos */
-        justify-content: space-around; /* Espacia los elementos de manera uniforme */
-        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas si es necesario */
-    
+    .item {
+        flex-basis: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        margin: 5px 0; /* Ajusta el margen vertical */
     }
 
-    /* Estilos opcionales para las imágenes */
-    .documentacion_envida img {
-        max-width: 100%; /* Asegura que las imágenes no se salgan de su contenedor */
-        height: auto; /* Mantiene la proporción de las imágenes */
+    img {
+        max-width: 80px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
     }
 
-    div {
-        display: flex; /* Utiliza Flexbox para alinear los elementos en fila */
-        justify-content: space-around; /* Espacio entre los elementos */
-        align-items: center; /* Alinea verticalmente los elementos en el centro */
+    .pdf-controls button {
+        padding: 8px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+        margin: 0 2px; /* Reduce el margen del botón */
     }
-    
-    div a {
-        text-align: center; /* Centra el texto debajo de la imagen */
-        margin: 10px; /* Agrega espacio entre cada enlace */
+}
+
+@media (min-width: 769px) {
+    .item {
+        flex-basis: calc(33.33% - 20px); /* Tres elementos por fila en pantallas grandes */
     }
-    
-    div img {
-        width: 100px; /* Ajusta el tamaño de la imagen si es necesario */
-        height: auto; /* Mantiene la proporción de la imagen */
-    }
+}
+
     
