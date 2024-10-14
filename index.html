@@ -4,52 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pronunciación Inglés - Video de Plan de Mejoramiento</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+
 </head>
 <body>
     <header>
-        <h1>PLAN DE MEJORAMIENTO DE INGLÉS</h1>
+        <h1>PLAN DE MEJORAMIENTO DE INGLÉS DANIEL SALINAS ADSO FICHA: 2826321</h1>
     </header>
 
-    <fieldset class="documentacion_enviada">
-        <legend>DOCUMENTACION ENVIADA POR LA INSTRUCTORA DE INGLES CORRESPONDIENTE</legend>
-        <div><a href="#" onclick="loadContent('correo.html');"><img src="corrreo.jpeg" alt="Ver correo"><h3>ver correo</h3></a></div>
+    <fieldset class="documentacion_envi<da">
+        <legend>DOCUMENTACION ENVIADA POR LA INSTRUCTORA CAMILA ORTIZ TRANSVERSAL DE INGLES CORRESPONDIENTE</legend>
         <div>
-            <div><a href="PM-DANIELSALINAS2826321.pdf" target="_blank"><img src="pdf.jpeg" alt="Ver pdf taller"><h3>ver pdf taller</h3></a></div>
-
+            <div>
+                <a href="https://soysena-my.sharepoint.com/:i:/g/personal/daniel_asalinas_soy_sena_edu_co/ERJQwjy66IlLtsl0znG3peMBspDLuVB18QKD6_lIHYtinQ?e=SiABfJ" target="_blank">
+                    <img src="corrreo.jpeg" alt="Ver correo">
+                    <h3>Ver correo</h3>
+                </a>
+            </div>
+            
+            <a href="#" onclick="loadPDF('https://soysena-my.sharepoint.com/:b:/g/personal/daniel_asalinas_soy_sena_edu_co/EWahzo8kM1pPro_7ldD-9nsBhPrdo_fpvEtH-Zx4yCeXSQ?e=TtvnMq');"><img src="pdf.jpeg" alt="Ver PDF Taller"><h3>descargar PDF Taller</h3></a>
         </div>
     </fieldset>
-    
-    <fieldset class="solucion_evaluacion">
-        <legend><h3>TENEMOS LAS SOLUCIONES DE LA EVALUACIÓN ESTABLECIDAS</h3></legend>
-        <div><a href="#" onclick="loadContent('presentacion_en_video.html');"><img src="descargar (1).jpeg" alt="Ver video"><h3>Ver Video</h3></a></div>
-        <div><a href="#" onclick="loadContent('presentacion_escrita.html');"><img src="OIP (1).jpeg" alt="Ver ensayo"><h3>Ver Ensayo</h3></a></div>
-        <div><a href="#" onclick="loadContent('pronunciacion_video.html');"><img src="OIP (3).jpeg" alt="Ver pronunciación"><h3>Ver Pronunciación</h3></a></div>
-        <div><a href="#" onclick="loadContent('solucion_pdf_taller.html');"><img src="pdf_1.jpeg" alt="Ver solucion pdf taller"><h3>ver solucion pdf taller</h3></a></div>
-    </fieldset>
-    
-    <fieldset class="muestra_frame">
-        <legend>VENTANA DONDE SE MUESTRA EL CONTENIDO SELECCIONADO</legend>
-        <iframe id="content-frame" src="" width="100%" height="400px" style="border: none;"></iframe>
+    <fieldset class="documentacion_respondida">
+        <legend><h3>TENEMOS LAS SOLUCIONES DE LA EVALUACIÓN ESTABLECIDAS  CON ESTO DOY POR TERMINANADO CUMPLO CON TODOS LOS REQUERIMIENTOS EXIGIDOS</h3></legend>
+        <div>
+            <a href="https://drive.google.com/uc?export=download&id=13n5CR5-0VQOv_puxcXD-JIsGao6sPG43" target="_blank">
+                <img src="descargar (1).jpeg" alt="Descargar Video">
+                <h3>Descargar Video</h3>
+            </a>
+        </div>
+        
+        <div><a href="#" onclick="loadPDF('https://soysena-my.sharepoint.com/:b:/g/personal/daniel_asalinas_soy_sena_edu_co/EXm0984skr1Hsm1UhhBvFW4B-04tsfTvsMKHvQN2Gheq_Q?e=S7Wjat');"><img src="OIP (1).jpeg" alt="Ver ensayo"><h3>descargar Ensayo</h3></a></div>
+        <div><a href="#" onclick="loadPDF('https://soysena-my.sharepoint.com/:b:/g/personal/daniel_asalinas_soy_sena_edu_co/EYCnPlXbyBNBgcv4a1csnoEBYCOL5EeWsORYJ-j89pw-Bw?e=KTIxGG');"><img src="OIP (3).jpeg" alt="Ver pronunciación"><h3>descargar Pronunciación</h3></a></div>
+        <div><a href="#" onclick="loadPDF('https://soysena-my.sharepoint.com/:b:/g/personal/daniel_asalinas_soy_sena_edu_co/EZ8ccfbWfD1Cph0M0X1sOkwBRm4tx0AlY9CqhXPxmdzpXA?e=9alUfg');"><img src="pdf_1.jpeg" alt="Ver solucion pdf taller"><h3>descargar solución PDF taller</h3></a></div>
     </fieldset>
 
     <footer>
         <p>Derechos de autor aprendiz Daniel Andrés Salinas Garavito</p>
         <p>Prohibida la reproducción total o parcial sin autorización. Solo para uso educativo o instructor competente del SENA.</p>
-        <p>xxxxxxxxxxxxxxxxxxxxx</p>
     </footer>
 
-    <script>
-        function loadContent(url) {
-            const frame = document.getElementById('content-frame');
-            frame.src = url;
-        }
-
-        function loadPDF(pdfUrl) {
-            const frame = document.getElementById('content-frame');
-            frame.src = pdfUrl;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
