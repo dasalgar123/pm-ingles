@@ -1,0 +1,28 @@
+body { font-family: Arial, sans-serif; padding: 20px; color: white;}
+header { text-align: center;}
+
+fieldset, 
+header, 
+footer, 
+article,body { border: 2px solid yellowgreen; border-radius: 30px; padding: 20px; margin: 10px;  background-color: green; margin: 10px;}
+
+legend { font-weight: bold; font-size: 20px;}
+.container { display: flex; justify-content: center; flex-wrap: wrap;}
+.item { margin: 10px; text-align: center;}
+h3 { margin: 10px 0;}
+
+footer { text-align: center; margin-top: 20px;}
+footer p { margin: 5px 0;}
+img { max-width: 100%; height: auto; border-radius: 10px;}
+a { text-decoration: none; color: white;}
+a:hover { color: yellow;}
+
+
+fieldset { display: flex; justify-content: space-around; align-items: center; border-radius: 30px; }
+div { text-align: center; margin: 0 10px;}
+img { max-width: 100px; height: auto; border-radius: 10px;}
+
+
+.documentacion { display: flex; justify-content: space-around; align-items: center;}
+.documentacion div { text-align: center; margin: 0 10px;}
+.documentacion img { max-width: 100px; height: auto; border-radius: 10px;}

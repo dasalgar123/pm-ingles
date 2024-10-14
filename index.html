@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronunciación Inglés - Video de Plan de Mejoramiento</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+</head>
+<body>
+    <header>
+        <h1>PLAN DE MEJORAMIENTO DE INGLÉS</h1>
+    </header>
+
+    <fieldset class="documentacion_enviada">
+        <legend>DOCUMENTACION ENVIADA POR LA INSTRUCTORA DE INGLES CORRESPONDIENTE</legend>
+        <div><a href="#" onclick="loadContent('correo.html');"><img src="corrreo.jpeg" alt="Ver correo"><h3>ver correo</h3></a></div>
+        <div>
+            <div><a href="PM-DANIELSALINAS2826321.pdf" target="_blank"><img src="pdf.jpeg" alt="Ver pdf taller"><h3>ver pdf taller</h3></a></div>
+
+        </div>
+    </fieldset>
+    
+    <fieldset class="solucion_evaluacion">
+        <legend><h3>TENEMOS LAS SOLUCIONES DE LA EVALUACIÓN ESTABLECIDAS</h3></legend>
+        <div><a href="#" onclick="loadContent('presentacion_en_video.html');"><img src="descargar (1).jpeg" alt="Ver video"><h3>Ver Video</h3></a></div>
+        <div><a href="#" onclick="loadContent('presentacion_escrita.html');"><img src="OIP (1).jpeg" alt="Ver ensayo"><h3>Ver Ensayo</h3></a></div>
+        <div><a href="#" onclick="loadContent('pronunciacion_video.html');"><img src="OIP (3).jpeg" alt="Ver pronunciación"><h3>Ver Pronunciación</h3></a></div>
+        <div><a href="#" onclick="loadContent('solucion_pdf_taller.html');"><img src="pdf_1.jpeg" alt="Ver solucion pdf taller"><h3>ver solucion pdf taller</h3></a></div>
+    </fieldset>
+    
+    <fieldset class="muestra_frame">
+        <legend>VENTANA DONDE SE MUESTRA EL CONTENIDO SELECCIONADO</legend>
+        <iframe id="content-frame" src="" width="100%" height="400px" style="border: none;"></iframe>
+    </fieldset>
+
+    <footer>
+        <p>Derechos de autor aprendiz Daniel Andrés Salinas Garavito</p>
+        <p>Prohibida la reproducción total o parcial sin autorización. Solo para uso educativo o instructor competente del SENA.</p>
+        <p>xxxxxxxxxxxxxxxxxxxxx</p>
+    </footer>
+
+    <script>
+        function loadContent(url) {
+            const frame = document.getElementById('content-frame');
+            frame.src = url;
+        }
+
+        function loadPDF(pdfUrl) {
+            const frame = document.getElementById('content-frame');
+            frame.src = pdfUrl;
+        }
+    </script>
+</body>
+</html>
+
